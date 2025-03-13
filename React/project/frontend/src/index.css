@@ -1,0 +1,29 @@
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 94vh;
+    background: linear-gradient(135deg, #d9ecf2, #a6cfe2); 
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border: 2px solid #a6cfe2; 
+    margin: 20px; 
+    transition: box-shadow 0.3s ease, transform 0.3s ease; 
+}
+
+.login_wrapper {
+    width: 50%;
+    min-width: 300px;
+    padding: 30px;
+    border: 2px solid #ccc; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    background: linear-gradient(135deg, #f7f7f7, #eaeaea); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.login_wrapper:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); 
+}
