@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch</title>
+</head>
+<body style="text-align: center;">
+    <h2>Image Interval</h2>
+    <img width="500px" height="300px" id="banner" src="" alt="">
+    <script>
+        let banner = document.getElementById("banner");
+        const imageArray = ["./assets/image-1.jpg", "./assets/image-2.jpg", "./assets/image-3.jpg", "./assets/image-4.jpg"]
+        let i = 0;
+        imageChange = () => {
+            banner.setAttribute("src", imageArray[i]);
+            i++;
+            if(i==4) {
+                i=0;
+            }
+        }
+        setInterval(imageChange, 1000);
+    </script>
+</body>
+</html>
+ 

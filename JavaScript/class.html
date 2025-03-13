@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> OOPs</title>
+    </head>
+    <body>
+        <h2> OOPS Features</h2>
+        <script>
+             let empData=[
+              {id:1,name:"A",age:23,salary:78899},
+              {id:2,name:"B",age:33,salary:47889},
+              {id:3,name:"C",age:29,salary:67889},
+              {id:4,name:"D",age:35,salary:37889}
+           ];
+
+        //    //method0-1
+        //    let salaryArray = empData.map(emp=>emp.salary)
+        //    let answer = salaryArray.reduce((accumulator, currentValue) => {
+        //         return accumulator + currentValue;
+        //    })
+        //    console.log("Total Salary: " + answer);
+
+           //method-2 (using only reduce())
+           let sum=empData.reduce((a,b)=>{
+               return a+b.salary
+           },0)
+           console.log(sum)
+
+        </script>
+    </body>
+</html>
+ 

@@ -1,0 +1,58 @@
+<!-- get and set data dynamically -->
+<!-- <!DOCTYPE html>
+<html>
+    <head>
+        <title> JavaScript Program</title>
+    </head>
+    <body>
+        <h2> JavaScript Dom Programs</h2>
+        <p id="target">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis debitis ea sed veniam nesciunt quibusdam ducimus excepturi rem quas corporis voluptatum rerum quo eligendi in sit ipsam, illum doloremque! Nam.
+        </p>
+        <button id="btn"> Click Here</button>
+        <script>
+           //get para and button
+           let para=document.getElementById("target");
+           let btn=document.getElementById("btn");
+           //perform click event in btn
+           btn.addEventListener("click",()=>{
+               
+               let data=para.innerHTML;//get data
+               alert(data);
+
+               para.innerHTML="<b>n this reference page, you will find all the Array methods and their properties. For example, the sort() method of an Array is used to sort all the elements of that array using default or custom sorting rules.</b>";
+           })
+        </script>
+    </body>
+</html> 
+
+
+<!-- creating a list dynamically --> -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> JavaScript Program</title>
+</head>
+
+<body>
+    <h2> JavaScript Dom Programs</h2>
+    <ol id="menu"></ol>
+    <button id="btn"> Click Here</button>
+    <script>
+        let menu = document.getElementById("menu")
+        let btn = document.getElementById("btn")
+
+        btn.addEventListener("click", () => {
+            let names = ["Hariansh", "Arvind", "Yash", "Aditya"]
+
+            names.forEach((val) => {
+                let li = document.createElement('li')
+                li.innerHTML = val
+                menu.appendChild(li)
+            })
+        })
+    </script>
+</body>
+
+</html>

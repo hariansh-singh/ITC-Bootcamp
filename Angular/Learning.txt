@@ -1,0 +1,9 @@
+when an angular app is loaded, the app component (default component) is loaded in the index.html
+
+Components:
+	ts -> Logic
+	html -> UI
+	CSS -> design
+	spec.ts -> testing
+
+ngStyle and ngClass -> dynamic styling and dynamic class

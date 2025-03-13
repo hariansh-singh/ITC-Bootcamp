@@ -1,0 +1,22 @@
+<h2>latest products</h2>
+ 
+<div class="row">
+ 
+    @for(product of productData; track product.id ){
+        <div class="col-md-4">
+            <div class="card m-2 p-2" style="width: 18rem;">
+               
+                <div class="card-body">
+                  <h5 class="card-title">{{product.name}}</h5>
+                  <p class="card-text">
+                    price :- Rs. {{product.price}}
+                    Quantity :- {{product.quantity}}
+                  </p>
+                  <a [routerLink]="['editpro' , product.id]" class="btn btn-primary m-2">Edit</a>
+                  <button class="btn btn-danger m-2" (click)="delPro(product.id)">Delete</button>
+                </div>
+              </div>
+        </div>
+    }
+</div>
+ 

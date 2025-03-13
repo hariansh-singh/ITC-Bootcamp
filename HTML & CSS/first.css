@@ -1,0 +1,60 @@
+*{
+    margin: 0px auto;
+}
+body{
+    background-color: lightgrey;
+}
+#main{
+    width: 100%;
+}
+#header{
+    height: 100px;
+    background-color: crimson;
+}
+#header h1{
+    color:white;
+    padding: 30px 60px;
+    font-family: 'Times New Roman', Times, serif;
+}
+#menu{
+    background-color: darkgray;
+}
+#menu ul{
+    padding: 0px;
+    list-style: none;
+}
+#menu ul li{
+    display: inline;
+}
+#menu ul li a{
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+}
+#section{
+    height: 450px;
+    background-color: darkkhaki;
+    padding-left: 15px;
+    padding-right: 10px;
+}
+#footer{
+    background-color: crimson;
+    color: white;
+    text-align: center;
+    padding: 10px 15px;
+}
+
+.left{
+    width: 20%;
+    background-color: aqua;
+    float: left;
+    height: 100%;
+}
+.right{
+    width: 80%; 
+    float: right;
+    height: 100%;
+    background-color: blueviolet;
+}
